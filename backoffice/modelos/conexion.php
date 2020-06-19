@@ -8,7 +8,7 @@ class Conexion{
         {
                 $link = new PDO("mysql:host=localhost;dbname=fa",
                     "root",
-                    "mysql");
+                    "");
 
                 $link->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
