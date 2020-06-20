@@ -3,32 +3,34 @@ FOOTER
 ======================================-->
 
 <footer class="container-fluid bg-dark contactenos" id="contactenos">
-	
+
 	<div class="container">
-		
-		<div class="d-flex flex-column-reverse flex-lg-row">			
+
+		<div class="d-flex flex-column-reverse flex-lg-row">
 
 			<div class="pt-3 pt-lg-5 pr-lg-5 flex-fill">
 
-				<p class="lead text-white text-center text-lg-left">CONTÁCTENOS</p>
-				
+				<p class="lead text-white text-center text-lg-left">
+					<h3 class="text-white"> ¿NECESITAS AYUDA? </h3>
+					<span class="text-white">Escríbenos, en un abrir y cerrar de ojos estaremos en contacto</span>
+				</p>
+
 				<form>
 
 					<div class="form-group">
-					
 						<input type="text" class="form-control form-control-lg" placeholder="Nombre">
-
 					</div>
 
 					<div class="form-group">
-						
 						<input type="text" class="form-control form-control-lg" placeholder="Correo electrónico">
 					</div>
 
 					<div class="form-group">
-						
 						<textarea class="form-control form-control-lg" rows="3" placeholder="Escribe aquí tu mensaje"></textarea>
+					</div>
 
+					<div class="form-group">
+						<input type="text" class="form-control form-control-lg" placeholder="Ingresa tu número de teléfono">
 					</div>
 
 					<button type="submit" class="btn btn-info btn-block btn-lg">Enviar</button>
@@ -43,9 +45,9 @@ FOOTER
 
 					<li>
 						<a href="#" target="_blank"><i class="fab fa-instagram lead text-white mx-4"></i></a>
-					</li>	
+					</li>
 
-					
+
 					<li>
 						<a href="#" target="_blank"><i class="fab fa-linkedin lead text-white mx-4"></i></a>
 					</li>
@@ -57,29 +59,15 @@ FOOTER
 					<li>
 						<a href="#" target="_blank"><i class="fab fa-youtube lead text-white mx-4"></i></a>
 					</li>
-	
+
 				</ul>
 
 			</div>
 
 			<div class="pt-lg-5 px-lg-5">
 
-				<div class="p-5 visitanos">
-				
-					<h1 class="mt-5">Visítanos</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-
-					<p>
-					Apple inc.<br>
-					Infinte Loop.<br>
-					Cupertino, CA 95014<br>
-					408-996-1010
-					</p>
-			
-					<p class="pb-lg-5">Email: info@apple.com<br>
-					Tel: 1-800-676-2775</p>
-
-				</div>
+				<iframe class="iframe" src="https://maps.google.com/?ll=23.135249,-82.359685&z=14&t=m&output=embed"
+								height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 			</div>
 
