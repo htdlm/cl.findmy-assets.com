@@ -3,9 +3,9 @@ MENÚ MÓVIL
 ======================================-->
 
 <div class="menuMovil">
-	
-	<ul class="p-0 m-0 py-4 d-flex justify-content-center">	
-		
+
+	<ul class="p-0 m-0 py-4 d-flex justify-content-center">
+
 		<li>
 			<i class="fas fa-times lead text-white mr-5"></i>
 		</li>
@@ -16,8 +16,8 @@ MENÚ MÓVIL
 
 		<li>
 			<a href="#" target="_blank"><i class="fab fa-instagram lead text-white mx-2"></i></a>
-		</li>	
-		
+		</li>
+
 		<li>
 			<a href="#" target="_blank"><i class="fab fa-linkedin lead text-white mx-2"></i></a>
 		</li>
@@ -51,33 +51,21 @@ MENÚ MÓVIL
 	</div>
 
 	<ul class="nav flex-column text-center mt-3">
-						
+
 		<li class="nav-item py-3">
-			<a class="nav-link text-white" href="#productos">Productos</a>
+			<a class="nav-link text-white" href="#start">Inicio</a>
 		</li>
 
 		<li class="nav-item py-3">
-			<a class="nav-link text-white" href="#nosotros">Nosotros</a>
+			<a class="nav-link text-white" href="#nosotros">¿Como funciona?</a>
 		</li>
 
 		<li class="nav-item py-3">
-			<a class="nav-link text-white" href="#testimonios">Testimonios</a>
-		</li>
-
-		<li class="nav-item py-3">
-			<a class="nav-link text-white" href="#planes">Planes</a>
-		</li>
-
-		<li class="nav-item py-3">
-			<a class="nav-link text-white" href="#faq">FAQ</a>
+			<a class="nav-link text-white" href="#planes">¿Cuanto cuesta?</a>
 		</li>
 
 		<li class="nav-item py-3">
 			<a class="nav-link text-white" href="#">Blog</a>
-		</li>
-
-		<li class="nav-item py-3">
-			<a class="nav-link text-white" href="#contactenos">Contáctenos</a>
 		</li>
 
 	</ul>

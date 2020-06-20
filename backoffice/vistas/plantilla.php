@@ -151,9 +151,9 @@
 								confirmButtonText: "Cerrar"
 					}).then(function(result){
 						if(result.value){
-							
+
 						}
-					});	
+					});
 		  </script>';
     } else{
         $_SESSION["cpyName"]=$empresa["nombre"];

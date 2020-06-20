@@ -1,11 +1,10 @@
 <?php
 
 //dev
-//define("DIWEB","http://localhost/findmyassets/");
+define("DIWEB","http://localhost/findmyassets/");
 //live
-define("DIWEB","https://cl.findmy-assets.com/");
+//define("DIWEB","https://cl.findmy-assets.com/");
 define("DICPY","findmy-assets.com");
-
 
 require_once "controladores/plantilla.controlador.php";
 require_once "controladores/ruta.controlador.php";

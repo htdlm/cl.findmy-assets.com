@@ -2,32 +2,46 @@
 CURSOS
 ======================================-->
 
-<div class="container-fluid productos" id="productos">
-	
+<div class="container-fluid productos" id="works">
+
 	<div class="container my-3">
-		
-		<!-- VIDEO 1  -->
 
-		<div class="row video1">
-			
-			<div class="col-12 col-lg-5 mt-lg-5 p-1 p-lg-5 bg-white">
-				
-				<h3 class="text-center text-lg-left">Lorem ipsum dolor sit amet, consectrtur</h3>
+		<div class="row justify-content-center m-5 p-5">
+			<h2>¿CÓMO FUNCIONA?</h2>
+		</div>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque perferendis ad ab dignissimos iste autem consequatur beatae ducimus, ullam eligendi officia alias nesciunt laudantium consequuntur recusandae quisquam saepe, modi accusantium!</p>
+		<div class="row">
 
-				<a href="<?php echo $ruta; ?>registro"><button class="btn btn-info btn-lg mt-1 mt-lg-3 d-none d-lg-block">Crear cuenta gratis</button></a>
-
+			<div class="col-sm-3">
+				<div align="center">
+					<img src="img/steps/1.png" alt="step 1" class="img-fluid img-step ">
+					<h3 class="text-center p-4 mb-4"> CREA TU CUENTA </h3>
+					<h6 class="text-center p-4"> Subtítulo del elemento </h6>
+				</div>
 			</div>
 
-			<div class="col-12 col-lg-7 p-2 p-lg-5 bg-white">
-				
-				<video width="100%" poster="img/video01.jpg">
-					
-					<source data-nite-src="videos/video01.mp4" type="video/mp4">
+			<div class="col-sm-3">
+				<div align="center">
+					<img src="img/steps/2.png" alt="step 2" class="img-fluid img-step ">
+					<h3 class="text-center p-4 mb-4"> GENERA TU INVENTARIO </h3>
+					<h6 class="text-center p-4"> Subtítulo del elemento </h6>
+				</div>
+			</div>
 
-				</video>
+			<div class="col-sm-3">
+				<div align="center">
+					<img src="img/steps/3.png" alt="step 3" class="img-fluid img-step ">
+					<h3 class="text-center p-4 mb-4"> ACTUALIZA Y MANTIENE TUS ACTIVOS </h3>
+					<h6 class="text-center p-4"> Subtítulo del elemento </h6>
+				</div>
+			</div>
 
+			<div class="col-sm-3 justify-content-center">
+				<div align="center">
+					<img src="img/steps/4.png" alt="step 4" class="img-fluid img-step ">
+					<h3 class="text-center p-4 mb-4"> CONTROLA TUS ACTIVOS </h3>
+					<h6 class="text-center p-4"> Subtítulo del elemento </h6>
+				</div>
 			</div>
 
 		</div>
