@@ -48,8 +48,6 @@ LEER CLIENTE FAVORITO
 
         $isql = "SELECT * FROM $tabla where $adminItem = $adminValor and favorito = 1";
 
-				echo $isql;
-
         $stmt = Conexion::conectar()->prepare($isql);
         $stmt->execute();
         return $stmt->fetch();

@@ -186,8 +186,9 @@ if(isset($_GET["pagina"])){
 		$_GET["pagina"] == "ingresos-matriz" ||
 		$_GET["pagina"] == "plan-compensacion" ||
 		$_GET["pagina"] == "soporte" ||
-        $_GET["pagina"] == "clientes" ||
-        $_GET["pagina"] == "empresas" ||
+    $_GET["pagina"] == "clientes" ||
+    $_GET["pagina"] == "empresas" ||
+    $_GET["pagina"] == "scanner" ||
 		$_GET["pagina"] == "salir"){
 
 		include "paginas/".$_GET["pagina"].".php";

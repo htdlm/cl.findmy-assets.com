@@ -51,6 +51,10 @@ if($usuario["perfil"] != "admin"){
 
                     </button>
 
+                    <a class="btn btn-purple" href="#">
+                        Escanear código
+                    </a>
+
                     <i class="fas fa-plus-circle text-purple"></i>
 
 
@@ -515,7 +519,3 @@ $eliminarProducto = new ControladorProductos();
 $eliminarProducto -> ctrEliminarProducto();
 
 ?>
-
-
-
-
