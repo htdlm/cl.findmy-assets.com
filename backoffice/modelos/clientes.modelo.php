@@ -30,7 +30,7 @@ class ModeloClientes{
 		}else{
 
 			return "error";
-		
+
 		}
 
 		$stmt->close();
@@ -47,6 +47,9 @@ LEER CLIENTE FAVORITO
     {
 
         $isql = "SELECT * FROM $tabla where $adminItem = $adminValor and favorito = 1";
+
+				echo $isql;
+
         $stmt = Conexion::conectar()->prepare($isql);
         $stmt->execute();
         return $stmt->fetch();
@@ -118,7 +121,7 @@ LEER CLIENTE FAVORITO
 		}else{
 
 			return "error";
-		
+
 		}
 
 		$stmt->close();
@@ -139,10 +142,10 @@ LEER CLIENTE FAVORITO
 		if($stmt -> execute()){
 
 			return "ok";
-		
+
 		}else{
 
-			return "error";	
+			return "error";
 
 		}
 
