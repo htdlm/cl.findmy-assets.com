@@ -159,6 +159,11 @@ NOSOTROS
 	background: #a1b287;
 }
 
+.btn-plan
+{
+	border-radius: 35px;
+}
+
 /*=============================================
 TESTIMONIOS
 =============================================*/
@@ -175,6 +180,35 @@ TESTIMONIOS
 .testimonios img:hover{
 	transform: scale(1.1, 1.1);
 	transition: .5s all;
+}
+
+.img-logo-ours
+{
+	width: 200px;
+}
+
+.our-title
+{
+	font-size: 40px;
+}
+
+.more-our
+{
+	text-decoration: none;
+	color: rgb(98, 98, 99);
+}
+
+.more-our:hover
+{
+	text-decoration: none;
+	color: rgb(67, 67, 69);
+}
+
+.p-ours
+{
+	line-height: 1.875em;
+	width: 800px;
+	text-align: justify;
 }
 
 /*=============================================

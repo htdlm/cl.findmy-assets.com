@@ -2,11 +2,11 @@
 CURSOS
 ======================================-->
 
-<div class="container-fluid productos" id="works">
+<div class="container-fluid productos" id="work">
 
 	<div class="container my-3">
 
-		<div class="row justify-content-center m-5 p-5">
+		<div class="row justify-content-center m-5">
 			<h2>¿CÓMO FUNCIONA?</h2>
 		</div>
 

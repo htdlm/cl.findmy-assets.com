@@ -27,7 +27,7 @@ HEADER
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link text-white" href="#planes">¿Cuanto cuesta?</a>
+							<a class="nav-link text-white" href="#plans">¿Cuanto cuesta?</a>
 						</li>
 
 						<li class="nav-item">

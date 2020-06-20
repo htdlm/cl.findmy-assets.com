@@ -8,7 +8,7 @@ if(isset($_POST["idioma"])){
 
 		include "modulos/header.php";
 
-	}else{		
+	}else{
 
 		include "modulos/header_en.php";
 
@@ -29,8 +29,8 @@ include "modulos/nosotros.php";
 
 include "modulos/testimonios.php";
 
-include "modulos/planes.php";
+//include "modulos/planes.php";
 
-include "modulos/faq.php";
+//include "modulos/faq.php";
 
 include "modulos/footer.php";
