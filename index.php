@@ -1,6 +1,9 @@
 <?php
 
-define("DIWEB","http://localhost/findmyassets/");
+//dev
+//define("DIWEB","http://localhost/findmyassets/");
+//live
+define("DIWEB","https://cl.findmy-assets.com");
 define("DICPY","findmy-assets.com");
 
 
