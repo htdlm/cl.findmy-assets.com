@@ -51,7 +51,7 @@ if($usuario["perfil"] != "admin"){
 
                     </button>
 
-                    <a class="btn btn-purple" href="#">
+                    <a class="btn btn-purple" href="scanner">
                         Escanear código
                     </a>
 
