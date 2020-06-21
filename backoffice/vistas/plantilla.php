@@ -10,7 +10,7 @@
 
   	<title>Backoffice | findmy-assets</title>
 
-  	<link rel="icon" href="vistas/img/plantilla/logo.ico">
+  	<link rel="icon" href="vistas/img/vectors/Favicon.svg">
 
   	<meta name="viewport" content="width=device-width, initial-scale=1">
 
