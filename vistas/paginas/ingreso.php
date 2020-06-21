@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-12 col-lg-4 formulario">
 				<figure class="p-2 p-sm-5 p-lg-4 p-xl-5 text-center">
-					<a href="<?php echo $ruta; ?>inicio"><img src="img/vectors/lGeneral.svg" class="img-fluid"></a>
+					<a href="<?php echo $ruta; ?>inicio"><img src="img/vectors/lGeneral.svg" class="img-fluid logo-fma"></a>
 					<div class="d-flex justify-content-between">
 						<h4>Ingreso al sistema</h4>
 
