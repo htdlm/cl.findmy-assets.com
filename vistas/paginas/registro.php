@@ -8,7 +8,7 @@
 
 				<figure class="p-2 p-sm-5 p-lg-2 p-xl-3 text-center">
 
-					<a href="<?php echo $ruta; ?>inicio"><img src="img/vectors/lGeneral.svg" class="img-fluid px-5"></a>
+					<a href="<?php echo $ruta; ?>inicio"><img src="img/vectors/lGeneral.svg" class="img-fluid px-5 logo-fma"></a>
 
 						<div class="d-flex justify-content-between">
 

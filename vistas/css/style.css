@@ -324,6 +324,11 @@ PÁGINA INGRESO Y REGISTRO
 	overflow-y:hidden;
 }
 
+.logo-fma
+{
+	height: 200px;
+}
+
 .fotoIngreso, .fotoRegistro{
 	position:relative;
 	background-size: cover;
