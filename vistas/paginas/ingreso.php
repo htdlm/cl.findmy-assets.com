@@ -4,7 +4,7 @@
 		<div class="row">
 			<div class="col-12 col-lg-4 formulario">
 				<figure class="p-2 p-sm-5 p-lg-4 p-xl-5 text-center">
-					<a href="<?php echo $ruta; ?>inicio"><img src="img/logo-positivo.png" class="img-fluid"></a>
+					<a href="<?php echo $ruta; ?>inicio"><img src="img/vectors/lGeneral.svg" class="img-fluid"></a>
 					<div class="d-flex justify-content-between">
 						<h4>Ingreso al sistema</h4>
 
@@ -40,7 +40,7 @@
 						<input type="email" class="form-control my-3 py-3" placeholder="Correo Electrónico" name="ingresoEmail" required>
 						<input type="password" class="form-control my-3 py-3" placeholder="Contraseña" name="ingresoPassword" required>
 
-						<?php 
+						<?php
 
 							$ingreso = new ControladorUsuarios();
 							$ingreso -> ctrIngresoUsuario();
@@ -55,7 +55,7 @@
 				</figure>
 			</div>
 
-			<div class="col-12 col-lg-8 fotoIngreso text-center">		
+			<div class="col-12 col-lg-8 fotoIngreso text-center">
 				<a href="<?php echo $ruta; ?>inicio"><button class="d-none d-lg-block text-center btn btn-default btn-lg my-3 text-white btnRegresar">Regresar</button></a>
 				<a href="<?php echo $ruta; ?>inicio"><button class="d-block d-lg-none text-center btn btn-default btn-lg btn-block my-3 text-white btnRegresarMovil">Regresar</button></a>
 
@@ -65,7 +65,7 @@
 					</li>
 					<li>
 						<a href="#" target="_blank"><i class="fab fa-instagram lead text-white mx-4"></i></a>
-					</li>	
+					</li>
 					<li>
 						<a href="#" target="_blank"><i class="fab fa-linkedin lead text-white mx-4"></i></a>
 					</li>
@@ -117,4 +117,3 @@ VENTANA MODAL RECUPERAR CONTRASEÑA
 	    </div>
     </div>
 </div>
-
