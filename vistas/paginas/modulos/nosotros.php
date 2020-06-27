@@ -14,41 +14,56 @@ NOSOTROS
 
 			<div class="col-sm-3">
 				<div align="center">
-					<img src="" alt="basic" class="img-fluid img-step ">
+					<h6 class="text-center p-2 plan-name color-1"> Basic </h6>
 					<h3 class="text-center p-2"> GRATIS </h3>
-					<h6 class="text-center p-2"> Basic </h6>
-					<h6 class="text-justify p-4"> Esta es la descripción de tu servicio. Escribe un breve resumen que incluya una descripción de tu plan o servicio, características importantes y cualquier otra información relevante para un cliente potencial. </h6>
-					<button type="button" class="btn btn-dark btn-plan">Comenzar ahora</button>
+					<button type="button" class="btn btn-outline-warning btn-plan">Comenzar ahora</button>
+					<p class="text-center p-4">
+						<ul>
+							<li class="mt-2">1 Usuario</li>
+							<li class="mt-2">50 Activos</li>
+							<li class="mt-2">Dashboard de control</li>
+							<li class="mt-2">Ingreso de activos</li>
+						</ul>
+					</p>
 				</div>
 			</div>
 
 			<div class="col-sm-3">
 				<div align="center">
-					<img src="" alt="Premium" class="img-fluid img-step ">
-					<h3 class="text-center p-2"> $99 / MES </h3>
-					<h6 class="text-center p-2"> Premium </h6>
-					<h6 class="text-justify p-4"> Esta es la descripción de tu servicio. Escribe un breve resumen que incluya una descripción de tu plan o servicio, características importantes y cualquier otra información relevante para un cliente potencial. </h6>
-					<button type="button" class="btn btn-dark btn-plan">Comenzar ahora</button>
+					<h6 class="text-center p-2 plan-name color-2"> Premium </h6>
+					<h3 class="text-center p-2"> $46,004.00 / MES </h3>
+					<button type="button" class="btn btn-outline-warning btn-plan">Comenzar ahora</button>
+					<p class="text-justify p-4">
+						<ul>
+							<li class="mt-2">5 Usuario</li>
+							<li class="mt-2">150 Activos</li>
+							<li class="mt-2">Dashboard de control</li>
+							<li class="mt-2">Ingreso de activos</li>
+							<li class="mt-2">Mantenimiento de activos</li>
+						</ul>
+					</p>
 				</div>
 			</div>
 
 			<div class="col-sm-3">
 				<div align="center">
-					<img src="" alt="VIP" class="img-fluid img-step ">
-					<h3 class="text-center p-2"> $199 / MES </h3>
-					<h6 class="text-center p-2"> VIP </h6>
-					<h6 class="text-justify p-4"> Esta es la descripción de tu servicio. Escribe un breve resumen que incluya una descripción de tu plan o servicio, características importantes y cualquier otra información relevante para un cliente potencial. </h6>
-					<button type="button" class="btn btn-dark btn-plan">Comenzar ahora</button>
+					<h6 class="text-center p-2 plan-name color-3"> VIP </h6>
+					<h3 class="text-center p-2"> $81,328.50 / MES </h3>
+					<button type="button" class="btn btn-outline-warning btn-plan">Comenzar ahora</button>
+					<p class="text-justify p-4">
+
+					</p>
 				</div>
 			</div>
 
 			<div class="col-sm-3 justify-content-center">
 				<div align="center">
-					<img src="" alt="MEDIDA" class="img-fluid img-step ">
+					<h6 class="text-center p-2 plan-name color-4"> A TU MEDIDA </h6>
 					<h3 class="text-center p-2"> - </h3>
-					<h6 class="text-center p-2"> A TU MEDIDA </h6>
-					<h6 class="text-justify p-4"> Esta es la descripción de tu servicio. Escribe un breve resumen que incluya una descripción de tu plan o servicio, características importantes y cualquier otra información relevante para un cliente potencial. </h6>
-					<button type="button" class="btn btn-dark btn-plan">Hablemos</button>
+					<button type="button" class="btn btn-outline-warning btn-plan">Hablemos</button>
+					<p class="text-justify p-4">
+						
+					</p>
 				</div>
 			</div>
 
