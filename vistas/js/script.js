@@ -5,7 +5,7 @@ ANIMACIONES SCROLL HEADER
 $(window).scroll(function(){
 
 	var posY = window.pageYOffset;
-	
+
 	if(posY > 10){
 
 		$("header").css({"background":"#043248", "transition":".3s all"})
@@ -71,7 +71,7 @@ $(".faq ul li.nav-item").click(function(){
 		$(listaPreguntas[i]).children("a").children("i").removeClass("fa-chevron-left");
 
 		$(listaPreguntas[i]).children("a").children("i").addClass("fa-chevron-right");
-	
+
 	}
 
 	$(this).addClass("bg-light");
@@ -94,32 +94,37 @@ if(window.matchMedia("(max-width:768px)").matches){
 
 		$(".menuMovil").slideToggle('fast');
 
-		e.preventDefault();
-
 		var vinculo = $(this).attr("href");
 
-		$("html, body").animate({
+		if ( vinculo.indexOf( 'https' ) == -1 )
+		{
+			e.preventDefault();
 
-			scrollTop: $(vinculo).offset().top - 60
+			$("html, body").animate({
 
-		}, 2000, "easeOutQuint")
+				scrollTop: $(vinculo).offset().top - 60
 
-	})
+			}, 2000, "easeOutQuint");
+		}		
+	});
 
 
 }else{
 
 	$(".botonera ul li a").click(function(e){
 
-		e.preventDefault();
-
 		var vinculo = $(this).attr("href");
 
-		$("html, body").animate({
+		if ( vinculo.indexOf( 'https' ) == -1 )
+		{
+			e.preventDefault();
 
-			scrollTop: $(vinculo).offset().top - 60
+			$("html, body").animate({
 
-		}, 2000, "easeOutQuint")
+				scrollTop: $(vinculo).offset().top - 60
+
+			}, 2000, "easeOutQuint");
+		}
 
 	})
 
@@ -159,7 +164,7 @@ $('body').nitePreload({
 			$("body").delay(350).css({"overflow-y":"scroll"})
 
 		}
-	
+
 	}
 });
 
@@ -184,7 +189,7 @@ var ruta = $("#ruta").val();
 $("input[name='registroEmail']").change(function(){
 
 	var email = $(this).val();
-	
+
 	var datos = new FormData();
 	datos.append("validarEmail", email);
 
@@ -198,7 +203,7 @@ $("input[name='registroEmail']").change(function(){
 		processData: false,
 		dataType:"json",
 		success:function(respuesta){
-			
+
 			if(respuesta){
 
 				$("input[name='registroEmail']").val("");
