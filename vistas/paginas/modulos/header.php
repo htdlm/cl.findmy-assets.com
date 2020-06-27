@@ -11,7 +11,7 @@ HEADER
 				<div class="col-7 col-sm-5 col-md-4 col-lg-2 col-xl-3 my-3 d-flex mt-lg-3 logotipo">
 					<i class="fas fa-bars d-block d-lg-none text-white pt-2 pr-2"></i>
 					<a href="<?php echo $ruta; ?>inicio">
-						<img data-nite-src="img/vectors/lGeneral.svg" class="img-fluid pt-1" style="height: 150px;">
+						<img data-nite-src="img/vectors/Logo.png" class="img-fluid pt-1">
 					</a>
 				</div>
 
