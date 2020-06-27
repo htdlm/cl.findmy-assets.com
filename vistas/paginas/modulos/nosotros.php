@@ -31,7 +31,7 @@ NOSOTROS
 			<div class="col-sm-3">
 				<div align="center">
 					<h6 class="text-center p-2 plan-name color-2"> Premium </h6>
-					<h3 class="text-center p-2"> $46,004.00 / MES </h3>
+					<h3 class="text-center p-2"> $46,004 / MES </h3>
 					<button type="button" class="btn btn-outline-warning btn-plan">Comenzar ahora</button>
 					<p class="text-justify p-4">
 						<ul>
@@ -48,7 +48,7 @@ NOSOTROS
 			<div class="col-sm-3">
 				<div align="center">
 					<h6 class="text-center p-2 plan-name color-3"> VIP </h6>
-					<h3 class="text-center p-2"> $81,328.50 / MES </h3>
+					<h3 class="text-center p-2"> $81,328 / MES </h3>
 					<button type="button" class="btn btn-outline-warning btn-plan">Comenzar ahora</button>
 					<p class="text-justify p-4">
 
@@ -62,7 +62,7 @@ NOSOTROS
 					<h3 class="text-center p-2"> - </h3>
 					<button type="button" class="btn btn-outline-warning btn-plan">Hablemos</button>
 					<p class="text-justify p-4">
-						
+
 					</p>
 				</div>
 			</div>

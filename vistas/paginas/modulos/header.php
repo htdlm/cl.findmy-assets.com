@@ -42,61 +42,6 @@ HEADER
 
 				</div>
 
-				<!-- IDIOMA E INGRESO -->
-
-				<div class="col-5 col-sm-7 col-md-8 col-lg-2 col-xl-3 p-0 pt-4 pt-lg-2 mt-lg-1 pt-xl-4">
-
-					<!-- IDIOMA -->
-
-					<div class="ml-xl-4 float-left mt-lg-1 d-none d-lg-block">
-
-						<div class="dropdown">
-
-							<button type="button" class="btn btn-light btn-sm dropdown-toggle pr-3" data-toggle="dropdown">
-
-								<form method="post" action="<?php echo $ruta; ?>">
-
-									<input type="hidden" name="idioma" value="es">
-									<input type="submit" value="ES" style="border: 0;
-																		    background: transparent;
-																		    padding: 0;
-																		    margin: 0;
-																		    float: left;
-																		    cursor: pointer;">
-
-
-
-								</form>
-
-							</button>
-
-							<div class="dropdown-menu">
-
-								<a class="dropdown-item">
-
-									<form method="post" action="<?php echo $ruta; ?>">
-
-										<input type="hidden" name="idioma" value="en">
-										<input type="submit" value="EN" style="border: 0;
-																			    background: transparent;
-																			    padding: 0;
-																			    margin: 0;
-																			    cursor: pointer;">
-
-
-
-									</form>
-
-								</a>
-
-							</div>
-
-						</div>
-
-					</div>
-
-				</div>
-
 			</div>
 
 		</div>

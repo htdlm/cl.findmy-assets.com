@@ -9,6 +9,9 @@ DISEÑO HERO - CINEMAGRAPH
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
+		      <img class="d-block w-100 img-fluid" src="img/carousel/carousel1.png" alt="">
+		    </div>
+				<div class="carousel-item">
 		      <img class="d-block w-100 img-fluid" src="img/carousel/carousel2.png" alt="">
 		    </div>
 				<div class="carousel-item">
@@ -19,9 +22,6 @@ DISEÑO HERO - CINEMAGRAPH
 		    </div>
 				<div class="carousel-item">
 		      <img class="d-block w-100 img-fluid" src="img/carousel/carousel5.png" alt="">
-		    </div>
-				<div class="carousel-item">
-		      <img class="d-block w-100 img-fluid" style="" src="img/carousel/carousel6.png" alt="">
 		    </div>
 		  </div>
 		  <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">

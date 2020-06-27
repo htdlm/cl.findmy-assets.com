@@ -9,7 +9,7 @@ TESTIMONIOS
 	<div class="container py-5">
 
 		<div align="center" class="p-3">
-			<img src="img/vectors/Logo Pequeño.svg" class="img-fluid img-logo-ours" alt="logo">
+			<img src="img/vectors/FMA.png" class="img-fluid img-logo-ours" alt="logo">
 
 			<h6 class="text-center our-title mt-5">NUESTRO NEGOCIO</h6>
 			<p class="mt-5 p-ours" align="center">
