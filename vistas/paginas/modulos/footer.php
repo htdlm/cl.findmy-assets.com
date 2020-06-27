@@ -66,8 +66,6 @@ FOOTER
 
 			<div class="pt-lg-5 px-lg-5">
 
-				<iframe class="iframe" src="https://maps.google.com/?ll=23.135249,-82.359685&z=14&t=m&output=embed"
-								height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 			</div>
 

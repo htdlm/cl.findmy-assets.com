@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-$ruta = ControladorRuta::ctrRuta(); 
+$ruta = ControladorRuta::ctrRuta();
 
  ?>
 
@@ -16,7 +16,7 @@ $ruta = ControladorRuta::ctrRuta();
 
 	<base href="vistas/">
 
-	<link rel="icon" href="img/icono.png">
+	<link rel="icon" href="img/vectors/Favicon.svg">
 
 	<!--=====================================
 	VÍNCULOS CSS
@@ -30,6 +30,9 @@ $ruta = ControladorRuta::ctrRuta();
 
 	<!-- Fuente Open Sans -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:100|Grand+Hotel" rel="stylesheet">
+
+  <!-- Hoja Estilo Personalizada -->
+	<link rel="stylesheet" href="css/adminlte.min.css">
 
 	<!-- Hoja Estilo Personalizada -->
 	<link rel="stylesheet" href="css/style.css">
@@ -56,7 +59,7 @@ $ruta = ControladorRuta::ctrRuta();
 	<!-- https://www.jqueryscript.net/loading/Handle-Loading-Progress-jQuery-Nite-Preloader.html -->
 	<script src="js/plugins/jquery.nite.preloader.js"></script>
 
-	<!-- SWEET ALERT 2 -->	
+	<!-- SWEET ALERT 2 -->
 	<!-- https://sweetalert2.github.io/ -->
 	<script src="js/plugins/sweetalert2.all.js"></script>
 
@@ -64,7 +67,7 @@ $ruta = ControladorRuta::ctrRuta();
 
 <body>
 
-<?php 
+<?php
 
 if(isset($_GET["pagina"])){
 
@@ -97,12 +100,12 @@ if(isset($_GET["pagina"])){
 						  	text: "¡Su cuenta ha sido verificada, ya puede ingresar al sistema!",
 						  	showConfirmButton: true,
 							confirmButtonText: "Cerrar"
-						  
+
 					}).then(function(result){
 
-							if(result.value){   
+							if(result.value){
 							    window.location = "'.$ruta.'ingreso"
-							  } 
+							  }
 					});
 
 				</script>';
@@ -110,11 +113,11 @@ if(isset($_GET["pagina"])){
 			return;
 
 		}
-	
+
 	}
 
 	/*=============================================
-	Enlace de afiliado 
+	Enlace de afiliado
 	=============================================*/
 
 	$validarEnlace = ControladorUsuarios::ctrMostrarUsuarios("enlace_afiliado", $_GET["pagina"]);
@@ -140,7 +143,7 @@ if(isset($_GET["pagina"])){
 			if($_POST["idioma"] == "es"){
 
 				include "paginas/ingreso.php";
-			
+
 			}else{
 
 				include "paginas/ingreso_en.php";
@@ -149,7 +152,7 @@ if(isset($_GET["pagina"])){
 		}else{
 
 			include "paginas/ingreso.php";
-		
+
 		}
 
 	}
@@ -161,7 +164,7 @@ if(isset($_GET["pagina"])){
 			if($_POST["idioma"] == "es"){
 
 				include "paginas/registro.php";
-			
+
 			}else{
 
 				include "paginas/registro_en.php";
@@ -170,7 +173,7 @@ if(isset($_GET["pagina"])){
 		}else{
 
 			include "paginas/registro.php";
-		
+
 		}
 
 	}else{
@@ -191,7 +194,7 @@ if(isset($_GET["pagina"])){
 
 <?php if (!isset($_COOKIE["ver_cookies"])): ?>
 
-<div class="jumbotron bg-white w-100 text-center py-4 shadow-lg cookies">	
+<div class="jumbotron bg-white w-100 text-center py-4 shadow-lg cookies">
 
 	<p>Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia al navegar nuestro sitio.
 	<a href="<?php echo $ruta; ?>politicas-de-privacidad.pdf" target="_blank">Leer más</a>

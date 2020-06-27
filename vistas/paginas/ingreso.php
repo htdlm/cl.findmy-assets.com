@@ -1,84 +1,95 @@
-<div class="ladoUsuarios">
+<div class="hold-transition login-page">
 
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-12 col-lg-4 formulario">
-				<figure class="p-2 p-sm-5 p-lg-4 p-xl-5 text-center">
-					<a href="<?php echo $ruta; ?>inicio"><img src="img/vectors/lGeneral.svg" class="img-fluid logo-fma"></a>
-					<div class="d-flex justify-content-between">
-						<h4>Ingreso al sistema</h4>
+	<div class="login-box">
 
-						<div class="dropdown text-right">
-							<button type="button" class="btn btn-light btn-sm dropdown-toggle pr-3" data-toggle="dropdown">
-								<form method="post" action="<?php echo "http://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]; ?>">
-									<input type="hidden" name="idioma" value="es">
-									<input type="submit" value="ES" style="border: 0;
-																		    background: transparent;
-																		    padding: 0;
-																		    margin: 0;
-																		    float: left;
-																		    cursor: pointer;">
-								</form>
-							</button>
-							<div class="dropdown-menu">
-								<a class="dropdown-item">
-									<form method="post" action="<?php echo "http://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]; ?>">
-										<input type="hidden" name="idioma" value="en">
-										<input type="submit" value="EN" style="border: 0;
-																			    background: transparent;
-																			    padding: 0;
-																			    margin: 0;
-																			    cursor: pointer;">
-									</form>
-								</a>
-							</div>
-						</div>
+	  <div class="login-box-body">
+	    <form method="post">
+
+				<div class="part-1">
+					<p class="text-center py-3 text-title-login">Hola, ingresa tu e-mail</p>
+					<div class="form-group">
+						<input type="email" id="email" class="form-control form-control-feedback" placeholder="E-mail" name="ingresoEmail" required>
 					</div>
 
-					<form method="post" class="mt-5">
-						<p class="text-center py-3">Bienvenido por favor escriba su correo electrónico que uso para registrarse y su contraseña</p>
-						<input type="email" class="form-control my-3 py-3" placeholder="Correo Electrónico" name="ingresoEmail" required>
-						<input type="password" class="form-control my-3 py-3" placeholder="Contraseña" name="ingresoPassword" required>
+					<div class="row">
+		        <div class="col-sm-3"></div>
+		        <!-- /.col -->
+		        <div class="col-sm-6">
+		          <button type="button" class="btn btn-warning text-white btn-block next">Continuar</button>
+		        </div>
+						<div class="col-sm-3"></div>
+		      </div>
 
-						<?php
+					<div class="row mt-4">
+						<div class="col-sm-1"></div>
+						<div class="col-sm-10">
+							<p class="text-center little-text mt-1">¿Sin cuenta?  <a class="ml-2 btn btn-outline-warning" href="<?php echo $ruta; ?>registro">Regístrate</a></p>
+						</div>
+						<div class="col-sm-1"></div>
+					</div>
+				</div>
 
-							$ingreso = new ControladorUsuarios();
-							$ingreso -> ctrIngresoUsuario();
+				<div class="part-2" style="display: none">
+					<p class="text-center py-3 text-title-login">Ahora tu clave</p>
+					<div class="form-group">
+		        <input type="password" class="form-control" placeholder="Password" name="ingresoPassword" required>
+		      </div>
 
-						?>
+					<div class="row">
+		        <div class="col-sm-3"></div>
+		        <!-- /.col -->
+		        <div class="col-sm-6">
+		          <button type="submit" class="btn btn-warning text-white btn-block next">Acceder</button>
+		        </div>
+						<div class="col-sm-3"></div>
+		      </div>
 
-						<input type="submit" class="form-control my-3 py-3 btn btn-info" value="Ingresar">
-						<p class="text-center pt-1">¿Aún no tienes una cuenta? | <a href="<?php echo $ruta; ?>registro">Regístrate</a></p>
-						<p class="text-center pt-1"><a href="#modalRecuperarPassword" data-toggle="modal" data-dismiss="modal">¿Olvidó su contraseña?</a></p>
+					<div class="row mt-4">
+						<div class="col-sm-1"></div>
+						<div class="col-sm-10">
+							<p class="text-center pt-1"><a class="btn btn-outline-warning" href="#modalRecuperarPassword" data-toggle="modal" data-dismiss="modal">¿Olvidó su contraseña?</a></p>
+						</div>
+						<div class="col-sm-1"></div>
+					</div>
+				</div>
+				<?php
 
-					</form>
-				</figure>
-			</div>
+					$ingreso = new ControladorUsuarios();
+					$ingreso -> ctrIngresoUsuario();
 
-			<div class="col-12 col-lg-8 fotoIngreso text-center">
-				<a href="<?php echo $ruta; ?>inicio"><button class="d-none d-lg-block text-center btn btn-default btn-lg my-3 text-white btnRegresar">Regresar</button></a>
-				<a href="<?php echo $ruta; ?>inicio"><button class="d-block d-lg-none text-center btn btn-default btn-lg btn-block my-3 text-white btnRegresarMovil">Regresar</button></a>
+				?>
+	    </form>
+	    <!-- /.social-auth-links -->
+	  </div>
+  <!-- /.login-box-body -->
+</div>
 
-				<ul class="p-0 m-0 py-4 d-flex justify-content-center redesSociales">
-					<li>
-						<a href="#" target="_blank"><i class="fab fa-facebook-f lead text-white mx-4"></i></a>
-					</li>
-					<li>
-						<a href="#" target="_blank"><i class="fab fa-instagram lead text-white mx-4"></i></a>
-					</li>
-					<li>
-						<a href="#" target="_blank"><i class="fab fa-linkedin lead text-white mx-4"></i></a>
-					</li>
-					<li>
-						<a href="#" target="_blank"><i class="fab fa-twitter lead text-white mx-4"></i></a>
-					</li>
-					<li>
-						<a href="#" target="_blank"><i class="fab fa-youtube lead text-white mx-4"></i></a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</div>
+<script type="text/javascript">
+
+	$( '.next' ).click((event) =>
+	{
+		if ( $( '#email' ).val( ) == '' )
+		{
+			swal({
+					type:"error",
+						title: "¡ERROR!",
+						text: "¡El email es obligatorio",
+						showConfirmButton: true,
+					confirmButtonText: "Cerrar"
+
+			});
+		}
+		else
+		{
+			$( '.part-1' ).hide( );
+			$( '.part-2' ).show( );
+		}
+
+	});
+
+</script>
+
+
 </div>
 
 <!--=====================================

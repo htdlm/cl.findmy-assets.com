@@ -11,7 +11,7 @@ HEADER
 				<div class="col-7 col-sm-5 col-md-4 col-lg-2 col-xl-3 my-3 d-flex mt-lg-3 logotipo">
 					<i class="fas fa-bars d-block d-lg-none text-white pt-2 pr-2"></i>
 					<a href="<?php echo $ruta; ?>inicio">
-						<img data-nite-src="img/vectors/Logo General.svg" class="img-fluid pt-1" style="height: 150px;">
+						<img data-nite-src="img/vectors/lGeneral.svg" class="img-fluid pt-1" style="height: 150px;">
 					</a>
 				</div>
 
@@ -32,6 +32,10 @@ HEADER
 
 						<li class="nav-item">
 							<a class="nav-link text-white" href="#">Blog</a>
+						</li>
+
+						<li class="nav-item">
+								<a href="<?php echo $ruta; ?>ingreso" class="nav-link text-white">Ingresar</a>
 						</li>
 
 					</ul>
@@ -88,18 +92,6 @@ HEADER
 							</div>
 
 						</div>
-
-					</div>
-
-					<!-- INGRESO -->
-
-					<div class="mr-2 mr-lg-0 float-right pt-1 ingresos">
-
-						<button class="btn btn-info btn-sm d-flex">
-
-							<a href="<?php echo $ruta; ?>ingreso" class="text-white">Ingresar</a>
-
-						</button>
 
 					</div>
 
