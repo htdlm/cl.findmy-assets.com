@@ -16,7 +16,7 @@ NOSOTROS
 				<div align="center">
 					<h6 class="text-center p-2 plan-name color-1"> Basic </h6>
 					<h3 class="text-center p-2"> GRATIS </h3>
-					<button type="button" class="btn btn-outline-warning btn-plan">Comenzar ahora</button>
+					<a href="<?php echo $ruta; ?>registro" class="btn btn-outline-warning btn-plan">Comenzar ahora</a>
 					<p class="text-center p-4">
 						<ul>
 							<li class="mt-2">1 Usuario</li>
@@ -32,7 +32,7 @@ NOSOTROS
 				<div align="center">
 					<h6 class="text-center p-2 plan-name color-2"> Premium </h6>
 					<h3 class="text-center p-2"> $46,004 / MES </h3>
-					<button type="button" class="btn btn-outline-warning btn-plan">Comenzar ahora</button>
+					<a href="<?php echo $ruta; ?>registro" class="btn btn-outline-warning btn-plan">Comenzar ahora</a>
 					<p class="text-justify p-4">
 						<ul>
 							<li class="mt-2">5 Usuario</li>
@@ -49,7 +49,7 @@ NOSOTROS
 				<div align="center">
 					<h6 class="text-center p-2 plan-name color-3"> VIP </h6>
 					<h3 class="text-center p-2"> $81,328 / MES </h3>
-					<button type="button" class="btn btn-outline-warning btn-plan">Comenzar ahora</button>
+					<a href="<?php echo $ruta; ?>registro" class="btn btn-outline-warning btn-plan">Comenzar ahora</a>
 					<p class="text-justify p-4">
 
 					</p>
@@ -60,7 +60,7 @@ NOSOTROS
 				<div align="center">
 					<h6 class="text-center p-2 plan-name color-4"> A TU MEDIDA </h6>
 					<h3 class="text-center p-2"> - </h3>
-					<button type="button" class="btn btn-outline-warning btn-plan">Hablemos</button>
+					 <a href="#contactenos" class="btn btn-outline-warning btn-plan toContact">Hablemos</a>
 					<p class="text-justify p-4">
 
 					</p>

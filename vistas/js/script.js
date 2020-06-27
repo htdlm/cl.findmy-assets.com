@@ -105,7 +105,7 @@ if(window.matchMedia("(max-width:768px)").matches){
 				scrollTop: $(vinculo).offset().top - 60
 
 			}, 2000, "easeOutQuint");
-		}		
+		}
 	});
 
 
@@ -129,6 +129,22 @@ if(window.matchMedia("(max-width:768px)").matches){
 	})
 
 }
+
+$(".toContact").click((e) =>
+{
+
+	e.preventDefault();
+
+	var vinculo = $(this).attr("href");
+
+	$("html, body").animate({
+
+		scrollTop: $(vinculo).offset().top - 60
+
+	}, 2000, "easeOutQuint");
+
+
+});
 
 
 /*=============================================
