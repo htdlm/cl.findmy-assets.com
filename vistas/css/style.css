@@ -68,12 +68,12 @@ DISEÑO HERO - CINEMAGRAPH
 	position:relative;
 	width:100%;
 	overflow:hidden;
+	margin-top: -15%;
 }
 
 .filtroVideo{
 	position:absolute;
 	width:100%;
-	height:inherit;
 	top:0;
 	left:0;
 	background: url(../img/filtro.png);
@@ -445,10 +445,6 @@ TABLET HORIZONTAL (LG revisamos en 1024px)
 	 	font-size:10px;
 	}
 
-	.vistaVideo{
-		height:70vh;
-	}
-
 	.vistaVideo .container{
 		transform:translate(0,-95%);
 	}
@@ -457,7 +453,6 @@ TABLET HORIZONTAL (LG revisamos en 1024px)
 	.filtroVideo{
 		position:absolute;
 		width:100%;
-		height:inherit;
 		top:0;
 		left:0;
 		background: url(../img/filtro.png);
@@ -504,7 +499,7 @@ TABLET VERTICAL (MD revisamos en 768px)
 	}
 
 	.vistaVideo{
-		height:90vh;
+
 	}
 
 	.vistaVideo .container{
@@ -521,7 +516,6 @@ TABLET VERTICAL (MD revisamos en 768px)
 		top:0;
 		left:0;
 		width:100%;
-		height:100%;
 		background:rgba(0,0,0,.5);
 		content: "";
 	}
@@ -590,7 +584,6 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
 	}
 
 	.vistaVideo{
-		height:950px;
 	}
 
 	.vistaVideo .container{
@@ -608,7 +601,6 @@ MÓVIL HORIZONTAL (SM revisamos en 576px)
 		top:0;
 		left:0;
 		width:100%;
-		height:100%;
 		background:rgba(0,0,0,.5);
 		content: "";
 	}
@@ -698,7 +690,6 @@ MOVIL VERTICAL (revisamos en 320px)
 		top:0;
 		left:0;
 		width:100%;
-		height:100%;
 		background:rgba(0,0,0,.5);
 		content: "";
 	}
