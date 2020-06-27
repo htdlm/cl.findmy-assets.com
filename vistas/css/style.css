@@ -286,14 +286,23 @@ FAQ
 CONTACTENOS
 =============================================*/
 
+#contactenos
+{
+	background-image: url( '../img/contacto.png' ) !important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% 50%;
+}
+
 .contactenos input, .contactenos textarea{
 	font-weight:100;
 }
 
 .contactenos .visitanos{
-	background:#bea890;
 	transform:translate(0%,-15%);
 }
+
+
 
 /*=============================================
 SCROLL UP

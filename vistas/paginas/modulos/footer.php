@@ -6,12 +6,14 @@ FOOTER
 
 	<div class="container">
 
-		<div class="d-flex flex-column-reverse flex-lg-row">
+		<div class="row">
 
-			<div class="pt-3 pt-lg-5 pr-lg-5 flex-fill">
+			<div class="col-sm-7"></div>
+
+			<div class="col-sm-5">
 
 				<p class="lead text-white text-center text-lg-left">
-					<h3 class="text-white"> ¿NECESITAS AYUDA? </h3>
+					<h3 class="text-white text-center"> ¿NECESITAS AYUDA? </h3>
 					<span class="text-white">Escríbenos, en un abrir y cerrar de ojos estaremos en contacto</span>
 				</p>
 
@@ -61,11 +63,6 @@ FOOTER
 					</li>
 
 				</ul>
-
-			</div>
-
-			<div class="pt-lg-5 px-lg-5">
-
 
 			</div>
 
