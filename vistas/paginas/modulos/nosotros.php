@@ -60,7 +60,7 @@ NOSOTROS
 				<div align="center">
 					<h6 class="text-center p-2 plan-name color-4"> A TU MEDIDA </h6>
 					<h3 class="text-center p-2"> - </h3>
-					 <a href="#contactenos" class="btn btn-outline-warning btn-plan toContact">Hablemos</a>
+					 <a href="#" class="btn btn-outline-warning btn-plan toContact">Hablemos</a>
 					<p class="text-justify p-4">
 
 					</p>

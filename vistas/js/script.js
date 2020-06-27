@@ -135,11 +135,9 @@ $(".toContact").click((e) =>
 
 	e.preventDefault();
 
-	var vinculo = $(this).attr("href");
-
 	$("html, body").animate({
 
-		scrollTop: $(vinculo).offset().top - 60
+		scrollTop: $('#contactenos').offset().top - 60
 
 	}, 2000, "easeOutQuint");
 
