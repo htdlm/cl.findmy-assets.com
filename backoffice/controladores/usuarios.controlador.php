@@ -83,7 +83,7 @@ Class ControladorUsuarios
 
                     $mensaje = str_replace('%cadena%', $ruta . $encriptarEmail, $mensaje);
 
-                    echo $mensaje;
+                    //echo $mensaje;
 
                     $mail->msgHTML($mensaje);
 
@@ -256,13 +256,13 @@ Alta de usuarios
 
                     $mensaje = file_get_contents($fhtml);
 
-                    $mensaje = str_replace('%logo%', $ruta . "vistas/img/logo-positivo.png", $mensaje);
+                    $mensaje = str_replace('%logo%', $ruta . "vistas/img/vectors/Logo.png", $mensaje);
 
                     $mensaje = str_replace('%iconomail%', $ruta . "vistas/img/icon-email.png", $mensaje);
 
                     $mensaje = str_replace('%cadena%', $ruta . $encriptarEmail, $mensaje);
 
-                    echo $mensaje;
+                    //echo $mensaje;
 
                     $mail->msgHTML($mensaje);
 
@@ -790,47 +790,17 @@ Alta de usuarios
 
                         $mail->addAddress($traerUsuario["email"]);
 
-                        $mail->msgHTML('<div style="width:100%; background:#eee; position:relative; font-family:sans-serif; padding-bottom:40px">
+                        $fhtml = $ruta . "recuperar-password.html";
 
-							<center>
+                        $mensaje = file_get_contents($fhtml);
 
-								<img style="padding:20px; width:10%" src="https://tutorialesatualcance.com/tienda/logo.png">
+                        $mensaje = str_replace('%logo%', $ruta . "vistas/img/vectors/Logo.png", $mensaje);
 
-							</center>
+                        $mensaje = str_replace('%ruta%', $ruta .'ingreso' , $mensaje);
 
-							<div style="position:relative; margin:auto; width:600px; background:white; padding:20px">
+                        $mensaje = str_replace('%password%', $nuevoPassword , $mensaje);                       
 
-								<center>
-
-								<img style="padding:20px; width:15%" src="https://tutorialesatualcance.com/tienda/icon-pass.png">
-
-								<h3 style="font-weight:100; color:#999">SOLICITUD DE NUEVA CONTRASEÑA</h3>
-
-								<hr style="border:1px solid #ccc; width:80%">
-
-								<h4 style="font-weight:100; color:#999; padding:0 20px"><strong>Su nueva contraseña: </strong>' . $nuevoPassword . '</h4>
-
-								<a href="' . $ruta . 'ingreso" target="_blank" style="text-decoration:none">
-
-								<div style="line-height:30px; background:#0aa; width:60%; padding:20px; color:white">
-									Haz click aquí
-								</div>
-
-								</a>
-
-								<h4 style="font-weight:100; color:#999; padding:0 20px">Ingrese nuevamente al sitio con esta contraseña y recuerde cambiarla en el panel de perfil de usuario</h4>
-
-								<br>
-
-								<hr style="border:1px solid #ccc; width:80%">
-
-								<h5 style="font-weight:100; color:#999">Si no se inscribió en esta cuenta, puede ignorar este correo electrónico y la cuenta se eliminará.</h5>
-
-								</center>
-
-							</div>
-
-						</div>');
+                        $mail->msgHTML( $mensaje );
 
                         $envio = $mail->Send();
 
