@@ -96,16 +96,16 @@
 VENTANA MODAL RECUPERAR CONTRASEÑA
 ======================================-->
 
-<div class="modal" id="modalRecuperarPassword">
-	<div class="modal-dialog">
+<div class="modal fade" id="modalRecuperarPassword">
+	<div class="modal-dialog modal-dialog-centered">
 	    <div class="modal-content">
-	    	<div class="modal-header bg-info text-white">
-		        <h4 class="modal-title">Recuperar contraseña</h4>
+	    	<div class="modal-header">
+		        <h4 class="modal-title text-center">Recuperar contraseña</h4>
 		        <button type="button" class="close text-white" data-dismiss="modal">&times;</button>
 		    </div>
 			 <div class="modal-body">
 				<form method="post">
-					<p class="text-muted">Escriba su correo electrónico con el que está registrado y allí le enviaremos una nueva contraseña:</p>
+					<p class="text-muted">Escriba su correo electrónico:</p>
 					<div class="input-group mb-3">
 						<div class="input-group-prepend">
 					      <span class="input-group-text">
@@ -114,7 +114,7 @@ VENTANA MODAL RECUPERAR CONTRASEÑA
 					    </div>
 					    <input type="email" class="form-control" placeholder="Email" name="emailRecuperarPassword" required>
 					</div>
-					<input type="submit" class="btn btn-dark btn-block" value="Enviar">
+					<input type="submit" class="btn btn-warning btn-block text-white" value="Enviar">
 
 					<?php
 
