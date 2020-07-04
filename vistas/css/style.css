@@ -45,7 +45,8 @@ header{
 	width:100%;
 	top:0;
 	left:0;
-	background:rgba(0,0,0,.1);
+	background: #FFFFFF;
+	color: black;
 }
 
 
@@ -68,7 +69,7 @@ DISEÑO HERO - CINEMAGRAPH
 	position:relative;
 	width:100%;
 	overflow:hidden;
-	margin-top: -15%;
+	margin-top: -5%;
 }
 
 .filtroVideo{

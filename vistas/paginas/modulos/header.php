@@ -20,22 +20,22 @@ HEADER
 				<div class="d-none d-lg-block col-lg-8 col-xl-6 p-0 pt-lg-2 mt-lg-1 pt-xl-4 botonera">
 					<ul class="nav justify-content-lg-left justify-content-xl-end">
 						<li class="nav-item">
-							<a class="nav-link text-white" href="#start">Inicio</a>
+							<a class="nav-link text-dark" href="#start">Inicio</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link text-white" href="#work">¿Como funciona?</a>
-						</li>
-
-						<li class="nav-item">
-							<a class="nav-link text-white" href="#plans">¿Cuanto cuesta?</a>
+							<a class="nav-link text-dark" href="#work">¿Como funciona?</a>
 						</li>
 
 						<li class="nav-item">
-							<a class="nav-link text-white" href="#">Blog</a>
+							<a class="nav-link text-dark" href="#plans">¿Cuanto cuesta?</a>
 						</li>
 
 						<li class="nav-item">
-								<a href="<?php echo $ruta; ?>ingreso" class="nav-link text-white">Ingresar</a>
+							<a class="nav-link text-dark" href="#">Blog</a>
+						</li>
+
+						<li class="nav-item">
+								<a href="<?php echo $ruta; ?>ingreso" class="nav-link text-dark">Ingresar</a>
 						</li>
 
 					</ul>
