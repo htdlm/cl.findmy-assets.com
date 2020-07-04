@@ -443,6 +443,24 @@ input[type="checkbox"]:checked + label[for="politicas"] span{
   background-color: #FFF;
 }
 
+.register-box
+{
+	padding: 2% 2% 2% 2%;
+	width: 50%;
+  background-color: #FFF;
+}
+
+.terminos-link
+{
+	font-size: 10px;
+	margin-top: 12px;
+}
+
+.terminos-link a
+{
+	color: rgb(234, 237, 83);
+}
+
 .text-title-login
 {
 	font-size: 24px;

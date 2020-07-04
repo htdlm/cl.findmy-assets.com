@@ -1,144 +1,55 @@
-<div class="ladoUsuarios">
+<div class="hold-transition login-page">
 
-	<div class="container-fluid">
+	<div class="register-box">
 
-		<div class="row">
+	  <div class="login-box-body">
+	    <form method="post" onsubmit="return validarPoliticas()">
 
-			<div class="col-12 col-lg-4 formulario">
+				<?php if (isset($_COOKIE["patrocinador"])): ?>
+					<input type="hidden" value="<?php echo $_COOKIE["patrocinador"];?>" name="patrocinador">
+				<?php else: ?>
+					<input type="hidden" value="findmy-assets" name="patrocinador">
+				<?php endif ?>
 
-				<figure class="p-2 p-sm-5 p-lg-2 p-xl-3 text-center">
+				<p class="text-center py-3"><b>Completa tus datos</b></p>
 
-					<a href="<?php echo $ruta; ?>inicio"><img src="img/vectors/lGeneral.svg" class="img-fluid px-5 logo-fma"></a>
-
-						<div class="d-flex justify-content-between">
-
-						<h4>Registrarse en el sistema</h4>
-
-						<div class="dropdown text-right">
-
-							<button type="button" class="btn btn-light btn-sm dropdown-toggle pr-3" data-toggle="dropdown">
-								<form method="post" action="<?php echo "http://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]; ?>">
-
-										<input type="hidden" name="idioma" value="es">
-										<input type="submit" value="ES" style="border: 0;
-																			    background: transparent;
-																			    padding: 0;
-																			    margin: 0;
-																			    float: left;
-																			    cursor: pointer;">
-
-
-
-								</form>
-							</button>
-
-							<div class="dropdown-menu">
-
-								<a class="dropdown-item">
-
-									<form method="post" action="<?php echo "http://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"]; ?>">
-
-										<input type="hidden" name="idioma" value="en">
-										<input type="submit" value="EN" style="border: 0;
-																			    background: transparent;
-																			    padding: 0;
-																			    margin: 0;
-																			    cursor: pointer;">
-
-
-
-									</form>
-
-								</a>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<form method="post" class="mt-3 px-4" onsubmit="return validarPoliticas()">
-
-						<?php if (isset($_COOKIE["patrocinador"])): ?>
-
-							<input type="hidden" value="<?php echo $_COOKIE["patrocinador"];?>" name="patrocinador">
-
-						<?php else: ?>
-
-							<input type="hidden" value="findmy-assets" name="patrocinador">
-
-						<?php endif ?>
-
-						<p class="text-center py-3">Favor de proporcionar los siguientes datos para su registro:</p>
-
-						<input type="text" class="form-control my-3 py-3" placeholder="Nombre" name="registroNombre" required>
-
+				<input type="text" class="form-control my-3 py-3" placeholder="Nombre" name="registroNombre" required>
+				<div class="row">
+					<div class="col-sm">
 						<input type="email" class="form-control my-3 py-3" placeholder="Correo Electrónico" name="registroEmail" required>
-
+					</div>
+					<div class="col-sm">
 						<input type="password" class="form-control my-3 py-3" placeholder="Contraseña" name="registroPassword" required>
+					</div>
+				</div>
 
+				<?php
+
+					$registro = new ControladorUsuarios();
+					$registro -> ctrRegistroUsuario();
+
+				?>
+
+				<div class="row">
+					<div class="col-sm-4">
+						<input type="submit" class="form-control btn btn-warning text-white" value="Registrarse">
+					</div>
+					<div class="col-sm-8">
 						<div class="form-check-inline text-right">
-
-							<input type="checkbox" id="politicas" class="form-check-input">
-
-								<label class="form-check-label" for="politicas">
-							Para registrarse debe aceptar nuestras <a href="<?php echo $ruta ?>politicas-de-privacidad.pdf" target="_blank">políticas de privacidad</a> <span></span>
+							<input type="checkbox" id="politicas" class="form-check-input" checked style="display: none;" >
+							<label class="form-check-label terminos-link" for="politicas">
+								Al registrarme, declaro qué acepto <a href="<?php echo $ruta ?>politicas-de-privacidad.pdf" target="_blank"> los términos, condiones y políticas de provacidad </a> de Find my assets.
 							</label>
-
 						</div>
-
-						<?php
-
-							$registro = new ControladorUsuarios();
-							$registro -> ctrRegistroUsuario();
-
-						?>
-
-						<input type="submit" class="form-control my-3 py-3 btn btn-info" value="Registrarse">
-
-						<p class="text-center py-3">¿Ya tienes una cuenta? | <a href="<?php echo $ruta; ?>ingreso">Ingresar</a></p>
-
-					</form>
-
-				</figure>
-
-			</div>
-
-			<div class="col-12 col-lg-8 fotoRegistro text-center">
-
-				<a href="<?php echo $ruta; ?>inicio"><button class="d-none d-lg-block text-center btn btn-default btn-lg my-3 text-white btnRegresar">Regresar</button></a>
-
-				<a href="<?php echo $ruta; ?>inicio"><button class="d-block d-lg-none text-center btn btn-default btn-lg btn-block my-3 text-white btnRegresarMovil">Regresar</button></a>
-
-				<ul class="p-0 m-0 py-4 d-flex justify-content-center redesSociales">
-
-					<li>
-						<a href="#" target="_blank"><i class="fab fa-facebook-f lead text-white mx-4"></i></a>
-					</li>
-
-					<li>
-						<a href="#" target="_blank"><i class="fab fa-instagram lead text-white mx-4"></i></a>
-					</li>
+					</div>
+				</div>
 
 
-					<li>
-						<a href="#" target="_blank"><i class="fab fa-linkedin lead text-white mx-4"></i></a>
-					</li>
 
-					<li>
-						<a href="#" target="_blank"><i class="fab fa-twitter lead text-white mx-4"></i></a>
-					</li>
+				<p class="text-center py-3">¿Ya tienes una cuenta? <a class="ml-2 btn btn-outline-warning" href="<?php echo $ruta; ?>ingreso">Ingresar</a></p>
 
-					<li>
-						<a href="#" target="_blank"><i class="fab fa-youtube lead text-white mx-4"></i></a>
-					</li>
-
-				</ul>
-
-			</div>
-
-		</div>
-
-	</div>
-
+	    </form>
+	    <!-- /.social-auth-links -->
+	  </div>
+  <!-- /.login-box-body -->
 </div>
