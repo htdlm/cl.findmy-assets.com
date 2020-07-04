@@ -65,9 +65,9 @@ Class ControladorUsuarios
 
 //                    $mail->isMail();
 
-                    $mail->setFrom("contacto@e-mpresa.com", "e-mpresa");
+                    $mail->setFrom("contacto@findmy-assets.com", "Find my assets");
 
-                    $mail->addReplyTo("contacto@e-mpresa.com", "e-mpresa");
+                    $mail->addReplyTo("contacto@findmy-assets.com", "Find my assets");
 
                     $mail->Subject = "Por favor verifique su email";
 
@@ -77,9 +77,9 @@ Class ControladorUsuarios
 
                     $mensaje = file_get_contents($fhtml);
 
-                    $mensaje = str_replace('%logo%', $ruta . "vistas/img/logo-positivo.png", $mensaje);
+                    $mensaje = str_replace('%logo%', $ruta . "vistas/img/vectors/Logo.png", $mensaje);
 
-                    $mensaje = str_replace('%iconomail%', $ruta . "vistas/img/icon-email.png", $mensaje);
+                    $mensaje = str_replace('%iconomail%', $ruta . "vistas/img/vectors/Logo.png", $mensaje);
 
                     $mensaje = str_replace('%cadena%', $ruta . $encriptarEmail, $mensaje);
 
@@ -110,7 +110,7 @@ Class ControladorUsuarios
 								}
 
 
-							});	
+							});
 
 						</script>';
 
@@ -137,7 +137,7 @@ Class ControladorUsuarios
 								}
 
 
-							});	
+							});
 
 						</script>';
 
@@ -167,7 +167,7 @@ Class ControladorUsuarios
 						}
 
 
-					});	
+					});
 
 				</script>';
 
@@ -290,7 +290,7 @@ Alta de usuarios
 								}
 
 
-							});	
+							});
 
 						</script>';
 
@@ -311,12 +311,12 @@ Alta de usuarios
 							}).then(function(result){
 
 								if(result.value){
-								   							    
+
 									window.location = "usuarios";
 
 								}
 
-							});	
+							});
 
 						</script>';
 
@@ -346,7 +346,7 @@ Alta de usuarios
 						}
 
 
-					});	
+					});
 
 				</script>';
 
@@ -422,12 +422,12 @@ Alta de usuarios
 								  	text: "¡El correo electrónico aún no ha sido verificado, por favor revise la bandeja de entrada o la carpeta SPAM de su correo electrónico para verificar la cuenta, o contáctese con nuestro soporte a info@academyoflife.com!",
 								  	showConfirmButton: true,
 									confirmButtonText: "Cerrar"
-								  
+
 							}).then(function(result){
 
-									if(result.value){   
+									if(result.value){
 									    history.back();
-									  } 
+									  }
 							});
 
 						</script>';
@@ -442,8 +442,8 @@ Alta de usuarios
                         $ruta = ControladorRuta::ctrRuta();
 
                         echo '<script>
-					
-							window.location = "' . $ruta . 'backoffice";				
+
+							window.location = "' . $ruta . 'backoffice";
 
 						</script>';
 
@@ -459,12 +459,12 @@ Alta de usuarios
 							  	text: "¡El email o contraseña no coinciden!",
 							  	showConfirmButton: true,
 								confirmButtonText: "Cerrar"
-							  
+
 						}).then(function(result){
 
-								if(result.value){   
+								if(result.value){
 								    history.back();
-								  } 
+								  }
 						});
 
 					</script>';
@@ -492,7 +492,7 @@ Alta de usuarios
 
 						}
 
-					});	
+					});
 
 				</script>';
 
@@ -591,12 +591,12 @@ Alta de usuarios
 							  	text: "¡No se permiten formatos diferentes a JPG y/o PNG!",
 							  	showConfirmButton: true,
 								confirmButtonText: "Cerrar"
-							  
+
 						}).then(function(result){
 
-								if(result.value){   
+								if(result.value){
 								    history.back();
-								  } 
+								  }
 						});
 
 					</script>';
@@ -624,12 +624,12 @@ Alta de usuarios
 					  	text: "¡La foto de perfil ha sido actualizada!",
 					  	showConfirmButton: true,
 						confirmButtonText: "Cerrar"
-					  
+
 					}).then(function(result){
 
-							if(result.value){   
+							if(result.value){
 							    history.back();
-							  } 
+							  }
 					});
 
 				</script>';
@@ -671,12 +671,12 @@ Alta de usuarios
 						  	text: "¡La contraseña ha sido actualizada!",
 						  	showConfirmButton: true,
 							confirmButtonText: "Cerrar"
-						  
+
 						}).then(function(result){
 
-								if(result.value){   
+								if(result.value){
 								    history.back();
-								  } 
+								  }
 						});
 
 					</script>';
@@ -704,7 +704,7 @@ Alta de usuarios
 
 						}
 
-					});	
+					});
 
 				</script>';
 
@@ -791,17 +791,17 @@ Alta de usuarios
                         $mail->addAddress($traerUsuario["email"]);
 
                         $mail->msgHTML('<div style="width:100%; background:#eee; position:relative; font-family:sans-serif; padding-bottom:40px">
-	
+
 							<center>
-								
+
 								<img style="padding:20px; width:10%" src="https://tutorialesatualcance.com/tienda/logo.png">
 
 							</center>
 
 							<div style="position:relative; margin:auto; width:600px; background:white; padding:20px">
-							
+
 								<center>
-								
+
 								<img style="padding:20px; width:15%" src="https://tutorialesatualcance.com/tienda/icon-pass.png">
 
 								<h3 style="font-weight:100; color:#999">SOLICITUD DE NUEVA CONTRASEÑA</h3>
@@ -812,7 +812,7 @@ Alta de usuarios
 
 								<a href="' . $ruta . 'ingreso" target="_blank" style="text-decoration:none">
 
-								<div style="line-height:30px; background:#0aa; width:60%; padding:20px; color:white">			
+								<div style="line-height:30px; background:#0aa; width:60%; padding:20px; color:white">
 									Haz click aquí
 								</div>
 
@@ -855,7 +855,7 @@ Alta de usuarios
 									}
 
 
-								});	
+								});
 
 							</script>';
 
@@ -882,7 +882,7 @@ Alta de usuarios
 									}
 
 
-								});	
+								});
 
 							</script>';
 
@@ -902,12 +902,12 @@ Alta de usuarios
 						  	text: "¡El correo no existe en el sistema, puede registrase nuevamente con ese correo!",
 						  	showConfirmButton: true,
 							confirmButtonText: "Cerrar"
-						  
+
 						}).then(function(result){
 
-								if(result.value){   
+								if(result.value){
 								    history.back();
-								  } 
+								  }
 						});
 
 					</script>';
@@ -935,7 +935,7 @@ Alta de usuarios
 
 						}
 
-					});	
+					});
 
 				</script>';
 
